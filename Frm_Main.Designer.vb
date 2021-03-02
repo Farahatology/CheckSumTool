@@ -63,17 +63,19 @@ Partial Class Frm_Main
         'Tab_Results
         '
         Me.Tab_Results.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Tab_Results.Location = New System.Drawing.Point(0, 3)
+        Me.Tab_Results.Location = New System.Drawing.Point(0, 5)
+        Me.Tab_Results.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Tab_Results.Name = "Tab_Results"
         Me.Tab_Results.SelectedIndex = 0
-        Me.Tab_Results.Size = New System.Drawing.Size(616, 304)
+        Me.Tab_Results.Size = New System.Drawing.Size(929, 474)
         Me.Tab_Results.TabIndex = 1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(543, 12)
+        Me.Button1.Location = New System.Drawing.Point(814, 18)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 29)
+        Me.Button1.Size = New System.Drawing.Size(112, 45)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Calculate"
         Me.Button1.UseVisualStyleBackColor = True
@@ -85,19 +87,21 @@ Partial Class Frm_Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TabControl2.Controls.Add(Me.TabPage3)
         Me.TabControl2.Controls.Add(Me.TabPage4)
-        Me.TabControl2.Location = New System.Drawing.Point(1, 70)
+        Me.TabControl2.Location = New System.Drawing.Point(2, 108)
+        Me.TabControl2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TabControl2.Name = "TabControl2"
         Me.TabControl2.SelectedIndex = 0
-        Me.TabControl2.Size = New System.Drawing.Size(630, 409)
+        Me.TabControl2.Size = New System.Drawing.Size(945, 629)
         Me.TabControl2.TabIndex = 5
         '
         'TabPage3
         '
         Me.TabPage3.Controls.Add(Me.Dgv_Files)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 29)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(622, 383)
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TabPage3.Size = New System.Drawing.Size(937, 596)
         Me.TabPage3.TabIndex = 0
         Me.TabPage3.Text = "Files"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -112,51 +116,57 @@ Partial Class Frm_Main
         Me.Dgv_Files.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Dgv_Files.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DgvLnk_Delete, Me.DgvTxt_FileName, Me.DgvTxt_FilePath, Me.DgvTxt_Extension})
         Me.Dgv_Files.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Dgv_Files.Location = New System.Drawing.Point(3, 3)
+        Me.Dgv_Files.Location = New System.Drawing.Point(4, 5)
+        Me.Dgv_Files.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Dgv_Files.Name = "Dgv_Files"
         Me.Dgv_Files.ReadOnly = True
         Me.Dgv_Files.RowHeadersWidth = 25
-        Me.Dgv_Files.Size = New System.Drawing.Size(616, 377)
+        Me.Dgv_Files.Size = New System.Drawing.Size(929, 586)
         Me.Dgv_Files.TabIndex = 1
         '
         'DgvLnk_Delete
         '
         Me.DgvLnk_Delete.HeaderText = ""
+        Me.DgvLnk_Delete.MinimumWidth = 8
         Me.DgvLnk_Delete.Name = "DgvLnk_Delete"
         Me.DgvLnk_Delete.ReadOnly = True
         Me.DgvLnk_Delete.Text = "Remove"
         Me.DgvLnk_Delete.UseColumnTextForLinkValue = True
-        Me.DgvLnk_Delete.Width = 5
+        Me.DgvLnk_Delete.Width = 8
         '
         'DgvTxt_FileName
         '
         Me.DgvTxt_FileName.HeaderText = "File Name"
+        Me.DgvTxt_FileName.MinimumWidth = 8
         Me.DgvTxt_FileName.Name = "DgvTxt_FileName"
         Me.DgvTxt_FileName.ReadOnly = True
-        Me.DgvTxt_FileName.Width = 78
+        Me.DgvTxt_FileName.Width = 116
         '
         'DgvTxt_FilePath
         '
         Me.DgvTxt_FilePath.HeaderText = "File Path"
+        Me.DgvTxt_FilePath.MinimumWidth = 8
         Me.DgvTxt_FilePath.Name = "DgvTxt_FilePath"
         Me.DgvTxt_FilePath.ReadOnly = True
-        Me.DgvTxt_FilePath.Width = 73
+        Me.DgvTxt_FilePath.Width = 107
         '
         'DgvTxt_Extension
         '
         Me.DgvTxt_Extension.HeaderText = "Extension"
+        Me.DgvTxt_Extension.MinimumWidth = 8
         Me.DgvTxt_Extension.Name = "DgvTxt_Extension"
         Me.DgvTxt_Extension.ReadOnly = True
-        Me.DgvTxt_Extension.Width = 79
+        Me.DgvTxt_Extension.Width = 115
         '
         'TabPage4
         '
         Me.TabPage4.Controls.Add(Me.Panel2)
         Me.TabPage4.Controls.Add(Me.Panel1)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 29)
+        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(622, 383)
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TabPage4.Size = New System.Drawing.Size(937, 596)
         Me.TabPage4.TabIndex = 1
         Me.TabPage4.Text = "Settings"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -165,10 +175,11 @@ Partial Class Frm_Main
         '
         Me.Panel2.Controls.Add(Me.Tab_Results)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(3, 73)
+        Me.Panel2.Location = New System.Drawing.Point(4, 112)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Padding = New System.Windows.Forms.Padding(0, 3, 0, 0)
-        Me.Panel2.Size = New System.Drawing.Size(616, 307)
+        Me.Panel2.Padding = New System.Windows.Forms.Padding(0, 5, 0, 0)
+        Me.Panel2.Size = New System.Drawing.Size(929, 479)
         Me.Panel2.TabIndex = 3
         '
         'Panel1
@@ -184,18 +195,20 @@ Partial Class Frm_Main
         Me.Panel1.Controls.Add(Me.Ck_SHA512)
         Me.Panel1.Controls.Add(Me.Ck_SHA1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(3, 3)
+        Me.Panel1.Location = New System.Drawing.Point(4, 5)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(616, 70)
+        Me.Panel1.Size = New System.Drawing.Size(929, 107)
         Me.Panel1.TabIndex = 2
         '
         'Lnk_Export
         '
         Me.Lnk_Export.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Lnk_Export.AutoSize = True
-        Me.Lnk_Export.Location = New System.Drawing.Point(570, 50)
+        Me.Lnk_Export.Location = New System.Drawing.Point(861, 77)
+        Me.Lnk_Export.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Lnk_Export.Name = "Lnk_Export"
-        Me.Lnk_Export.Size = New System.Drawing.Size(39, 13)
+        Me.Lnk_Export.Size = New System.Drawing.Size(55, 20)
         Me.Lnk_Export.TabIndex = 5
         Me.Lnk_Export.TabStop = True
         Me.Lnk_Export.Text = "Export"
@@ -206,18 +219,21 @@ Partial Class Frm_Main
         Me.GroupBox2.Controls.Add(Me.Rdo_Custom)
         Me.GroupBox2.Controls.Add(Me.Rdo_Common)
         Me.GroupBox2.Controls.Add(Me.Rdo_All)
-        Me.GroupBox2.Location = New System.Drawing.Point(147, 24)
+        Me.GroupBox2.Location = New System.Drawing.Point(220, 37)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(182, 38)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.GroupBox2.Size = New System.Drawing.Size(273, 58)
         Me.GroupBox2.TabIndex = 4
         Me.GroupBox2.TabStop = False
         '
         'Rdo_Custom
         '
         Me.Rdo_Custom.AutoSize = True
-        Me.Rdo_Custom.Location = New System.Drawing.Point(115, 15)
+        Me.Rdo_Custom.Location = New System.Drawing.Point(172, 23)
+        Me.Rdo_Custom.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Rdo_Custom.Name = "Rdo_Custom"
-        Me.Rdo_Custom.Size = New System.Drawing.Size(61, 17)
+        Me.Rdo_Custom.Size = New System.Drawing.Size(89, 24)
         Me.Rdo_Custom.TabIndex = 5
         Me.Rdo_Custom.Text = "Custom"
         Me.Rdo_Custom.UseVisualStyleBackColor = True
@@ -226,9 +242,10 @@ Partial Class Frm_Main
         '
         Me.Rdo_Common.AutoSize = True
         Me.Rdo_Common.Checked = True
-        Me.Rdo_Common.Location = New System.Drawing.Point(48, 15)
+        Me.Rdo_Common.Location = New System.Drawing.Point(72, 23)
+        Me.Rdo_Common.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Rdo_Common.Name = "Rdo_Common"
-        Me.Rdo_Common.Size = New System.Drawing.Size(66, 17)
+        Me.Rdo_Common.Size = New System.Drawing.Size(98, 24)
         Me.Rdo_Common.TabIndex = 5
         Me.Rdo_Common.TabStop = True
         Me.Rdo_Common.Text = "Common"
@@ -237,9 +254,10 @@ Partial Class Frm_Main
         'Rdo_All
         '
         Me.Rdo_All.AutoSize = True
-        Me.Rdo_All.Location = New System.Drawing.Point(6, 15)
+        Me.Rdo_All.Location = New System.Drawing.Point(9, 23)
+        Me.Rdo_All.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Rdo_All.Name = "Rdo_All"
-        Me.Rdo_All.Size = New System.Drawing.Size(36, 17)
+        Me.Rdo_All.Size = New System.Drawing.Size(51, 24)
         Me.Rdo_All.TabIndex = 5
         Me.Rdo_All.Text = "All"
         Me.Rdo_All.UseVisualStyleBackColor = True
@@ -249,9 +267,10 @@ Partial Class Frm_Main
         Me.Ck_CRC32.AutoSize = True
         Me.Ck_CRC32.Checked = True
         Me.Ck_CRC32.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.Ck_CRC32.Location = New System.Drawing.Point(6, 46)
+        Me.Ck_CRC32.Location = New System.Drawing.Point(9, 71)
+        Me.Ck_CRC32.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Ck_CRC32.Name = "Ck_CRC32"
-        Me.Ck_CRC32.Size = New System.Drawing.Size(59, 17)
+        Me.Ck_CRC32.Size = New System.Drawing.Size(87, 24)
         Me.Ck_CRC32.TabIndex = 1
         Me.Ck_CRC32.Text = "CRC32"
         Me.Ck_CRC32.UseVisualStyleBackColor = True
@@ -259,9 +278,10 @@ Partial Class Frm_Main
         'Ck_SHA384
         '
         Me.Ck_SHA384.AutoSize = True
-        Me.Ck_SHA384.Location = New System.Drawing.Point(134, 4)
+        Me.Ck_SHA384.Location = New System.Drawing.Point(201, 6)
+        Me.Ck_SHA384.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Ck_SHA384.Name = "Ck_SHA384"
-        Me.Ck_SHA384.Size = New System.Drawing.Size(64, 17)
+        Me.Ck_SHA384.Size = New System.Drawing.Size(96, 24)
         Me.Ck_SHA384.TabIndex = 0
         Me.Ck_SHA384.Text = "SHA384"
         Me.Ck_SHA384.UseVisualStyleBackColor = True
@@ -271,9 +291,10 @@ Partial Class Frm_Main
         Me.Ck_MD5.AutoSize = True
         Me.Ck_MD5.Checked = True
         Me.Ck_MD5.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.Ck_MD5.Location = New System.Drawing.Point(6, 25)
+        Me.Ck_MD5.Location = New System.Drawing.Point(9, 38)
+        Me.Ck_MD5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Ck_MD5.Name = "Ck_MD5"
-        Me.Ck_MD5.Size = New System.Drawing.Size(47, 17)
+        Me.Ck_MD5.Size = New System.Drawing.Size(69, 24)
         Me.Ck_MD5.TabIndex = 0
         Me.Ck_MD5.Text = "MD5"
         Me.Ck_MD5.UseVisualStyleBackColor = True
@@ -281,9 +302,10 @@ Partial Class Frm_Main
         'Ck_SHA256
         '
         Me.Ck_SHA256.AutoSize = True
-        Me.Ck_SHA256.Location = New System.Drawing.Point(64, 4)
+        Me.Ck_SHA256.Location = New System.Drawing.Point(96, 6)
+        Me.Ck_SHA256.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Ck_SHA256.Name = "Ck_SHA256"
-        Me.Ck_SHA256.Size = New System.Drawing.Size(64, 17)
+        Me.Ck_SHA256.Size = New System.Drawing.Size(96, 24)
         Me.Ck_SHA256.TabIndex = 0
         Me.Ck_SHA256.Text = "SHA256"
         Me.Ck_SHA256.UseVisualStyleBackColor = True
@@ -291,9 +313,10 @@ Partial Class Frm_Main
         'Ck_SHA512
         '
         Me.Ck_SHA512.AutoSize = True
-        Me.Ck_SHA512.Location = New System.Drawing.Point(204, 4)
+        Me.Ck_SHA512.Location = New System.Drawing.Point(306, 6)
+        Me.Ck_SHA512.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Ck_SHA512.Name = "Ck_SHA512"
-        Me.Ck_SHA512.Size = New System.Drawing.Size(64, 17)
+        Me.Ck_SHA512.Size = New System.Drawing.Size(96, 24)
         Me.Ck_SHA512.TabIndex = 0
         Me.Ck_SHA512.Text = "SHA512"
         Me.Ck_SHA512.UseVisualStyleBackColor = True
@@ -303,9 +326,10 @@ Partial Class Frm_Main
         Me.Ck_SHA1.AutoSize = True
         Me.Ck_SHA1.Checked = True
         Me.Ck_SHA1.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.Ck_SHA1.Location = New System.Drawing.Point(6, 4)
+        Me.Ck_SHA1.Location = New System.Drawing.Point(9, 6)
+        Me.Ck_SHA1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Ck_SHA1.Name = "Ck_SHA1"
-        Me.Ck_SHA1.Size = New System.Drawing.Size(52, 17)
+        Me.Ck_SHA1.Size = New System.Drawing.Size(78, 24)
         Me.Ck_SHA1.TabIndex = 0
         Me.Ck_SHA1.Text = "SHA1"
         Me.Ck_SHA1.UseVisualStyleBackColor = True
@@ -313,18 +337,21 @@ Partial Class Frm_Main
         'Gp_DropZone
         '
         Me.Gp_DropZone.Controls.Add(Me.Btn_OpenFileDialog)
-        Me.Gp_DropZone.Location = New System.Drawing.Point(5, 6)
+        Me.Gp_DropZone.Location = New System.Drawing.Point(8, 9)
+        Me.Gp_DropZone.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Gp_DropZone.Name = "Gp_DropZone"
-        Me.Gp_DropZone.Size = New System.Drawing.Size(532, 57)
+        Me.Gp_DropZone.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Gp_DropZone.Size = New System.Drawing.Size(798, 88)
         Me.Gp_DropZone.TabIndex = 6
         Me.Gp_DropZone.TabStop = False
         Me.Gp_DropZone.Text = "Drop Files Here"
         '
         'Btn_OpenFileDialog
         '
-        Me.Btn_OpenFileDialog.Location = New System.Drawing.Point(499, 12)
+        Me.Btn_OpenFileDialog.Location = New System.Drawing.Point(748, 18)
+        Me.Btn_OpenFileDialog.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Btn_OpenFileDialog.Name = "Btn_OpenFileDialog"
-        Me.Btn_OpenFileDialog.Size = New System.Drawing.Size(27, 39)
+        Me.Btn_OpenFileDialog.Size = New System.Drawing.Size(40, 60)
         Me.Btn_OpenFileDialog.TabIndex = 0
         Me.Btn_OpenFileDialog.Text = "..."
         Me.Btn_OpenFileDialog.UseVisualStyleBackColor = True
@@ -337,9 +364,10 @@ Partial Class Frm_Main
         'Lnk_RemoveAll
         '
         Me.Lnk_RemoveAll.AutoSize = True
-        Me.Lnk_RemoveAll.Location = New System.Drawing.Point(549, 44)
+        Me.Lnk_RemoveAll.Location = New System.Drawing.Point(824, 68)
+        Me.Lnk_RemoveAll.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Lnk_RemoveAll.Name = "Lnk_RemoveAll"
-        Me.Lnk_RemoveAll.Size = New System.Drawing.Size(60, 13)
+        Me.Lnk_RemoveAll.Size = New System.Drawing.Size(89, 20)
         Me.Lnk_RemoveAll.TabIndex = 1
         Me.Lnk_RemoveAll.TabStop = True
         Me.Lnk_RemoveAll.Text = "Remove All"
@@ -347,14 +375,15 @@ Partial Class Frm_Main
         'Frm_Main
         '
         Me.AllowDrop = True
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(630, 479)
+        Me.ClientSize = New System.Drawing.Size(945, 737)
         Me.Controls.Add(Me.Lnk_RemoveAll)
         Me.Controls.Add(Me.Gp_DropZone)
         Me.Controls.Add(Me.TabControl2)
         Me.Controls.Add(Me.Button1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Frm_Main"
         Me.Text = "CheckSum Tool"
         Me.TabControl2.ResumeLayout(False)

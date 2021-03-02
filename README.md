@@ -1,1 +1,4 @@
 # CheckSumTool Using MD5 and SHA-1
+This software allows to generate MD (Message Digest) and SHA hashes from a file or files or files in a directory. Checksum is an value calculated from a content of file by special algorithm. You can also verify the file integrity of the downloaded document or program. File Checksum Utility is very easy to use. From the graphical user interface, choose the file from your computer storage. The tool calculate and display checksum values.
+
+File Checksum Utility is a free software (Freeware) that is available for use at no monetary cost. It is fully functional for an unlimited time. You can copy and diffuse it without restriction if it's free of charge. The author restricts the rights of the user to modify, make derivative works, or reverse-engineer the software.
